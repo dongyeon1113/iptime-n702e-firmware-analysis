@@ -16,7 +16,7 @@
 ### 3.1 핵심 인증 함수 식별
 펌웨어를 Ghidra로 분석한 결과, `Symbol Tree` 내 `Exports` 항목에서 인증 로직을 담당하는 핵심 함수들을 직접 식별하였습니다. 단순 문자열 탐색보다 정확하게 핵심 함수들을 찾아낼 수 있었습니다.
 
-![추출함수](analysis-docs/exported_functions.png)
+![추출함수](images/exported_functions.png)
 
 ### 3.2 핵심 함수 분석
 식별된 `auth_check_userpass`와 `check_password_cache` 함수가 펌웨어 전체 동작에서 어떤 동작을 하는지 확인했습니다.
