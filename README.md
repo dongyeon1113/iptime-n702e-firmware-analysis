@@ -20,7 +20,7 @@
 
 ### 3.2 핵심 함수 분석
 식별된 `auth_check_userpass`와 `check_password_cache` 함수가 펌웨어 전체 동작에서 어떤 동작을 하는지 확인했습니다.
-Ghidra로 compile한 결과입니다.
+Ghidra로 decompile한 결과입니다.
 
 ```c
 bool auth_check_userpass(void)
@@ -77,4 +77,4 @@ bool auth_check_userpass(void)
 평소에 연습문제만 풀다가 펌웨어내 핵심 바이너리를 찾아서 분석해보니 구조가 생각보다 취약하다고 생각했습니다.
 
 ## 5. 향후 계획
-- 파악된 인증 로직을 바탕으로 공격 방법 검토.
+- 파악된 인증 로직을 바탕으로 보안개선 방어관점 분석
